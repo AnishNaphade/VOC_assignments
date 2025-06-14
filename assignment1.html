@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anish Naphade - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #764ba2;
+        }
+        
+        h3 {
+            color: #2980b9;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+            transition: transform 0.2s ease;
+        }
+        
+        li:hover {
+            transform: translateX(5px);
+            color: #667eea;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+        
+        a:hover {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project {
+            background: rgba(52, 152, 219, 0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: all 0.3s ease;
+        }
+        
+        .project:hover {
+            background: rgba(52, 152, 219, 0.2);
+            transform: translateX(10px);
+        }
+        
+        .contact-info {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .contact-info a {
+            color: #fff;
+            font-weight: bold;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .contact-info a:hover {
+            border-bottom: 2px solid #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+        
+        .highlight {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Anish Naphade</h1>
+        </header>
+        
+        <main>
+            <section class="section">
+                <h2>About Me</h2>
+                <p>Hello! I'm <span class="highlight">Anish Naphade</span>, a dedicated B.Tech student in Artificial Intelligence and Data Science at Vishwakarma Institute of Technology, Pune. I have developed an expertise in machine learning, deep learning, and full-stack web development.</p>
+                <p>What makes me unique is my ability to bridge the gap between theoretical AI concepts and practical applications. I have hands-on experience in developing intelligent systems, from real-time facial recognition to advanced NLP applications. My academic research background includes co-authoring research papers on sentiment analysis and recommendation systems, showcasing my commitment to contributing to the AI community.</p>
+                
+            </section>
+            
+            <div class="skills-grid">
+                <section class="section">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Programming Languages - C, Java, SQL, Python</li>
+                        <li>Frontend Development - JavaScript, ReactJS, NextJS13</li>
+                        <li>Backend Development - Node.js, Express.js</li>
+                        <li>AI/ML Frameworks - PyTorch, TensorFlow, Keras, Scikit-Learn</li>
+                        <li>Data Science - Pandas, NumPy, Matplotlib</li>
+                        <li>Computer Vision - OpenCV, MTCNN, InceptionResNetV1</li>
+                        <li>NLP & Transformers - Hugging Face, DistilBART, StanfordCoreNLP</li>
+                        <li>Database Management - MySQL, SQLite</li>
+                    </ul>
+                </section>
+                
+                <section class="section">
+                    <h2>Interests</h2>
+                    <ol>
+                        <li>Artificial Intelligence & Machine Learning - Developing intelligent systems and predictive models</li>
+                        <li>Computer Vision - Creating applications for image processing and facial recognition</li>
+                        <li>Natural Language Processing - Building text analysis and summarization systems</li>
+                        <li>Deep Learning - Implementing CNNs, transformers, and neural networks</li>
+                        <li>Research & Development - Contributing to academic research in AI and data science</li>
+                        <li>Full-Stack Development - Building end-to-end web applications with modern frameworks</li>
+                    </ol>
+                </section>
+            </div>
+            
+            <section class="section">
+                <h2>Projects</h2>
+                
+                <div class="project">
+                    <h3>Real-Time Attendance System with Anti-Spoofing</h3>
+                    <p>An advanced attendance system integrating anti-spoofing and liveness detection using live camera input and motion-based verification techniques. Implemented MTCNN for precise face detection and DeepPixBiS for anti-spoofing checks, achieving over 92% spoofing prevention accuracy against photo, video, and screen attacks. Facial embeddings are extracted using InceptionResNetV1 pretrained on VGGFace2 and stored securely in SQLite database.</p>
+                    <p><strong>Technologies:</strong> DeepPixBiS, InceptionResNetV1, MTCNN, SQLite</p>
+                </div>
+                
+                <div class="project">
+                    <h3>Crop Disease Detection System</h3>
+                    <p>Developed a VGG-16 based image classification system to identify 10 types of tomato leaf diseases using a dataset of over 20,000 labeled images. Achieved up to 98% test accuracy on VGG-16 (25 Epochs) architecture and 96% test accuracy on VGG-16 (50 Epochs) architecture, providing farmers with an AI-powered diagnostic tool.</p>
+                    <p><strong>Technologies:</strong> TensorFlow, Keras, CNN, VGG16</p>
+                </div>
+                
+                <div class="project">
+                    <h3>YouTube Video Summarization</h3>
+                    <p>Developed a web application using Streamlit that summarizes YouTube videos by extracting transcripts and applying DistilBART transformer model from Hugging Face. Integrated YouTube Transcript API for dynamic transcript retrieval and optimized performance using ThreadPoolExecutor, reducing summarization latency by 35%. Achieved over 90% coherence accuracy in testing scenarios.</p>
+                    <p><strong>Technologies:</strong> Transformers, NLP, DistilBART, YouTube Transcript API, Streamlit</p>
+                </div>
+                
+                <div class="project">
+                    <h3>Facial Recognition-Based Music Player</h3>
+                    <p>Built an intelligent music player that personalizes playlists by detecting user emotions in real-time using facial recognition and expression analysis. Utilized OpenCV for live facial capture (Haar cascades) and TensorFlow-based CNN models to classify emotions such as happiness, sadness, anger, and surprise with over 85% accuracy.</p>
+                    <p><strong>Technologies:</strong> OpenCV, TensorFlow, Keras, NumPy, CNN</p>
+                </div>
+            </section>
+            
+            <section class="section">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Let's connect and discuss opportunities in AI and Data Science!</p>
+                    <p><strong>Email:</strong> <a href="mailto:anishnaphade@gmail.com">anishnaphade@gmail.com</a></p>
+                    <p><strong>Phone:</strong> +91 - 8010670258</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anishnaphade/" target="_blank">LinkedIn Profile</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/AnishNaphade" target="_blank">github.com/AnishNaphade</a></p>
+                    <p><strong>LeetCode:</strong> <a href="https://leetcode.com/AnishNaphade" target="_blank">LeetCode - AnishNaphade</a></p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
